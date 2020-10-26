@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\natac\\source\\repos\\AppPrueba\\AppPrueba\\AppPrueba.csproj": {}
+    "C:\\Users\\natac\\OneDrive\\Documentos\\GitHub\\AppPrueba\\AppPrueba\\AppPrueba\\AppPrueba.csproj": {}
   },
   "projects": {
-    "C:\\Users\\natac\\source\\repos\\AppPrueba\\AppPrueba\\AppPrueba.csproj": {
+    "C:\\Users\\natac\\OneDrive\\Documentos\\GitHub\\AppPrueba\\AppPrueba\\AppPrueba\\AppPrueba.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\natac\\source\\repos\\AppPrueba\\AppPrueba\\AppPrueba.csproj",
+        "projectUniqueName": "C:\\Users\\natac\\OneDrive\\Documentos\\GitHub\\AppPrueba\\AppPrueba\\AppPrueba\\AppPrueba.csproj",
         "projectName": "AppPrueba",
-        "projectPath": "C:\\Users\\natac\\source\\repos\\AppPrueba\\AppPrueba\\AppPrueba.csproj",
+        "projectPath": "C:\\Users\\natac\\OneDrive\\Documentos\\GitHub\\AppPrueba\\AppPrueba\\AppPrueba\\AppPrueba.csproj",
         "packagesPath": "C:\\Users\\natac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\natac\\source\\repos\\AppPrueba\\AppPrueba\\obj\\",
+        "outputPath": "C:\\Users\\natac\\OneDrive\\Documentos\\GitHub\\AppPrueba\\AppPrueba\\AppPrueba\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\natac\\AppData\\Roaming\\NuGet\\NuGet.Config",

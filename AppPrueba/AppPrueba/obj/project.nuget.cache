@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eXqWrqM4OgGxVOmrE4YwhYB4UpnglkDDEe0wNSKZGo/2a7x4RI22tMJTGtg8yfE2yhO67PXUxOkz2LRHVf0ipg==",
+  "dgSpecHash": "mxcpuKaHMPShvtkj4Fh5JFQ7oN3Tukbi52Prf0RIUcuQKkmIwrpbLk+e8mnCZxLEPKtd3u8joft8xpHk1h5XCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\natac\\source\\repos\\AppPrueba\\AppPrueba\\AppPrueba.csproj",
+  "projectFilePath": "C:\\Users\\natac\\OneDrive\\Documentos\\GitHub\\AppPrueba\\AppPrueba\\AppPrueba\\AppPrueba.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\natac\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\natac\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
