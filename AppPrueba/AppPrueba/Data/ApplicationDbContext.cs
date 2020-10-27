@@ -10,11 +10,12 @@ namespace AppPrueba.Data
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            :base(options)
+            : base(options)
         {
         }
 
         public DbSet<Pais> Paises { get; set; }
         public DbSet<Provincia> Provincias { get; set; }
+        public DbSet<Ciudad> Ciudades { get; set; }
     }
 }

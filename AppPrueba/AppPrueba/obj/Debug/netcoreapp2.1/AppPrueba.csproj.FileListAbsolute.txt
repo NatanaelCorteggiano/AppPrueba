@@ -47,7 +47,6 @@ C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\bin\Debu
 C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\AppPrueba.csprojAssemblyReference.cache
 C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\AppPrueba.AssemblyInfoInputs.cache
 C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\AppPrueba.AssemblyInfo.cs
-C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\AppPrueba.csproj.CoreCompileInputs.cache
 C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\AppPrueba.RazorAssemblyInfo.cache
 C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\AppPrueba.RazorAssemblyInfo.cs
 C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\AppPrueba.TagHelpers.input.cache
@@ -71,3 +70,14 @@ C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debu
 C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\AppPrueba.pdb
 C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\AppPrueba.genruntimeconfig.cache
 C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\AppPrueba.csproj.CopyComplete
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\AppPrueba.csproj.CoreCompileInputs.cache
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Pais\Create.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Pais\Delete.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Pais\Details.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Pais\Edit.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Pais\Index.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Provincias\Create.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Provincias\Delete.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Provincias\Details.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Provincias\Edit.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Provincias\Index.cshtml.g.cs
