@@ -3,37 +3,22 @@ using AppPrueba.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AppPrueba.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201027145355_Provincias")]
+    partial class Provincias
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("AppPrueba.Models.Ciudad", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Nombre");
-
-                    b.Property<int>("ProvinciaId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProvinciaId");
-
-                    b.ToTable("Ciudad");
-                });
 
             modelBuilder.Entity("AppPrueba.Models.Pais", b =>
                 {
@@ -63,14 +48,6 @@ namespace AppPrueba.Migrations
                     b.HasIndex("PaisId");
 
                     b.ToTable("Provincias");
-                });
-
-            modelBuilder.Entity("AppPrueba.Models.Ciudad", b =>
-                {
-                    b.HasOne("AppPrueba.Models.Provincia")
-                        .WithMany("Ciudades")
-                        .HasForeignKey("ProvinciaId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("AppPrueba.Models.Provincia", b =>

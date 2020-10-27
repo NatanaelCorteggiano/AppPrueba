@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace AppPrueba.Models
 {
-    public class Pais
+    public class Ciudad
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public List<Provincia> Provincias { get; set; }
+        public int ProvinciaId { get; set; }
     }
 }
