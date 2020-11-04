@@ -35,7 +35,8 @@
           "Microsoft.Extensions.Logging.Debug": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.BrowserLink": "2.1.1",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10",
+          "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.6"
         },
         "runtime": {
           "AppPrueba.dll": {}
@@ -44,6 +45,7 @@
           "AppPrueba.dll": {}
         }
       },
+      "jQuery/1.8.0": {},
       "Microsoft.AspNetCore/2.1.7": {
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics": "2.1.1",
@@ -576,6 +578,11 @@
         },
         "compile": {
           "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {}
+        }
+      },
+      "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+        "dependencies": {
+          "jQuery": "1.8.0"
         }
       },
       "Microsoft.VisualStudio.Web.BrowserLink/2.1.1": {
@@ -3666,6 +3673,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "jQuery/1.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-laDFQRJrIRHT0Z0GVYklMt3bE0iu0MZFJwHwg21kt3SHb7Bj8TdNiM3K+ZdK1DzB8ZxKy8z7NkJvwMas+dmHBw==",
+      "path": "jquery/1.8.0",
+      "hashPath": "jquery.1.8.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore/2.1.7": {
       "type": "package",
       "serviceable": true,
@@ -3889,6 +3903,13 @@
       "sha512": "sha512-nS2XKqi+1A1umnYNLX2Fbm/XnzCxs5i+zXVJ3VC6r9t2z0NZr9FLnJN4VQpKigdcWH/iFTbMuX6M6WQJcTjVIg==",
       "path": "microsoft.extensions.dependencymodel/2.1.0",
       "hashPath": "microsoft.extensions.dependencymodel.2.1.0.nupkg.sha512"
+    },
+    "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-udg7ZBszgqxloQ+ShJRONKQAzPnJIlUhKZB+AIvZdKh7CDc5Nms69T9X0hN5i+NqMmQE6njkzdCcEb16lPdJTw==",
+      "path": "microsoft.jquery.unobtrusive.ajax/3.2.6",
+      "hashPath": "microsoft.jquery.unobtrusive.ajax.3.2.6.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.BrowserLink/2.1.1": {
       "type": "package",

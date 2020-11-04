@@ -7,11 +7,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AppPrueba.Data;
 using AppPrueba.Models;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace AppPrueba.Controllers
 {
     public class PaisController : Controller
-    {
+    {     
         private readonly ApplicationDbContext _context;
 
         public PaisController(ApplicationDbContext context)
@@ -23,6 +24,12 @@ namespace AppPrueba.Controllers
         public async Task<IActionResult> Index()
         {
             return View(await _context.Paises.ToListAsync());
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ListaPaises()
+        {            
+            return Ok(await _context.Paises.ToListAsync());
         }
 
         // GET: Pais/Details/5

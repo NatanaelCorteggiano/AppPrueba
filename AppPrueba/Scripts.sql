@@ -22,3 +22,42 @@ VALUES (N'20201026202359_Inicial', N'2.1.14-servicing-32113');
 
 GO
 
+
+CREATE TABLE [Provincias] (
+    [Id] int NOT NULL IDENTITY,
+    [Nombre] nvarchar(max) NULL,
+    [PaisId] int NOT NULL,
+    CONSTRAINT [PK_Provincias] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Provincias_Paises_PaisId] FOREIGN KEY ([PaisId]) REFERENCES [Paises] ([Id]) ON DELETE CASCADE
+);
+
+GO
+
+CREATE INDEX [IX_Provincias_PaisId] ON [Provincias] ([PaisId]);
+
+GO
+
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20201027145355_Provincias', N'2.1.14-servicing-32113');
+
+GO
+
+
+CREATE TABLE [Ciudad] (
+    [Id] int NOT NULL IDENTITY,
+    [Nombre] nvarchar(max) NULL,
+    [ProvinciaId] int NOT NULL,
+    CONSTRAINT [PK_Ciudad] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Ciudad_Provincias_ProvinciaId] FOREIGN KEY ([ProvinciaId]) REFERENCES [Provincias] ([Id]) ON DELETE CASCADE
+);
+
+GO
+
+CREATE INDEX [IX_Ciudad_ProvinciaId] ON [Ciudad] ([ProvinciaId]);
+
+GO
+
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20201027150424_Ciudades', N'2.1.14-servicing-32113');
+
+GO
