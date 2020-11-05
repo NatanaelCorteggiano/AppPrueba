@@ -8,7 +8,7 @@ namespace AppPrueba.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Ciudad",
+                name: "Ciudades",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)

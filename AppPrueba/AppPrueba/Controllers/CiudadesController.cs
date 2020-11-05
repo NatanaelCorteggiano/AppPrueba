@@ -10,28 +10,23 @@ using AppPrueba.Models;
 
 namespace AppPrueba.Controllers
 {
-    public class ProvinciasController : Controller
+    public class CiudadesController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public ProvinciasController(ApplicationDbContext context)
+        public CiudadesController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Provincias
+        // GET: Ciudades
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Provincias.ToListAsync());
+            var ciudades = _context.Ciudades.ToList();
+            return View(await _context.Ciudades.ToListAsync());
         }
 
-        [HttpGet]
-        public async Task<IActionResult> ListaProvincias()
-        {
-            return Ok(await _context.Provincias.ToListAsync());
-        }
-
-        // GET: Provincias/Details/5
+        // GET: Ciudades/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -39,39 +34,39 @@ namespace AppPrueba.Controllers
                 return NotFound();
             }
 
-            var provincia = await _context.Provincias
+            var ciudad = await _context.Ciudades
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (provincia == null)
+            if (ciudad == null)
             {
                 return NotFound();
             }
 
-            return View(provincia);
+            return View(ciudad);
         }
 
-        // GET: Provincias/Create
+        // GET: Ciudades/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Provincias/Create
+        // POST: Ciudades/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,PaisId")] Provincia provincia)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,ProvinciaId")] Ciudad ciudad)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(provincia);
+                _context.Add(ciudad);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(provincia);
+            return View(ciudad);
         }
 
-        // GET: Provincias/Edit/5
+        // GET: Ciudades/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,22 +74,22 @@ namespace AppPrueba.Controllers
                 return NotFound();
             }
 
-            var provincia = await _context.Provincias.FindAsync(id);
-            if (provincia == null)
+            var ciudad = await _context.Ciudades.FindAsync(id);
+            if (ciudad == null)
             {
                 return NotFound();
             }
-            return View(provincia);
+            return View(ciudad);
         }
 
-        // POST: Provincias/Edit/5
+        // POST: Ciudades/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,PaisId")] Provincia provincia)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,ProvinciaId")] Ciudad ciudad)
         {
-            if (id != provincia.Id)
+            if (id != ciudad.Id)
             {
                 return NotFound();
             }
@@ -103,12 +98,12 @@ namespace AppPrueba.Controllers
             {
                 try
                 {
-                    _context.Update(provincia);
+                    _context.Update(ciudad);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProvinciaExists(provincia.Id))
+                    if (!CiudadExists(ciudad.Id))
                     {
                         return NotFound();
                     }
@@ -119,10 +114,10 @@ namespace AppPrueba.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(provincia);
+            return View(ciudad);
         }
 
-        // GET: Provincias/Delete/5
+        // GET: Ciudades/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -130,30 +125,30 @@ namespace AppPrueba.Controllers
                 return NotFound();
             }
 
-            var provincia = await _context.Provincias
+            var ciudad = await _context.Ciudades
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (provincia == null)
+            if (ciudad == null)
             {
                 return NotFound();
             }
 
-            return View(provincia);
+            return View(ciudad);
         }
 
-        // POST: Provincias/Delete/5
+        // POST: Ciudades/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var provincia = await _context.Provincias.FindAsync(id);
-            _context.Provincias.Remove(provincia);
+            var ciudad = await _context.Ciudades.FindAsync(id);
+            _context.Ciudades.Remove(ciudad);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ProvinciaExists(int id)
+        private bool CiudadExists(int id)
         {
-            return _context.Provincias.Any(e => e.Id == id);
+            return _context.Ciudades.Any(e => e.Id == id);
         }
     }
 }

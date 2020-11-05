@@ -81,3 +81,8 @@ C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debu
 C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Provincias\Edit.cshtml.g.cs
 C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Provincias\Index.cshtml.g.cs
 C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\AppPrueba.csproj.CoreCompileInputs.cache
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Ciudades\Create.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Ciudades\Delete.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Ciudades\Details.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Ciudades\Edit.cshtml.g.cs
+C:\Users\natac\OneDrive\Documentos\GitHub\AppPrueba\AppPrueba\AppPrueba\obj\Debug\netcoreapp2.1\Razor\Views\Ciudades\Index.cshtml.g.cs
