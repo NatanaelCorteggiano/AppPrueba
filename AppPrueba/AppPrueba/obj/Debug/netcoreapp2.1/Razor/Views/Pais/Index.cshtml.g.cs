@@ -66,7 +66,7 @@ using AppPrueba.Models;
             WriteLiteral("\r\n<h2>Pais</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(114, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb7bd0aad2c84113b16abcc96a1cce8e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "56ea2950f1bc45028d1438941cc07cc2", async() => {
                 BeginContext(137, 10, true);
                 WriteLiteral("Crear Pais");
                 EndContext();
@@ -116,7 +116,7 @@ using AppPrueba.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(549, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "450d7951a36243909168373954487209", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca7ab46119234b40b5339acffabbca93", async() => {
                 BeginContext(594, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -151,7 +151,7 @@ using AppPrueba.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(622, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c683750916184368816c62bbcc158490", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0a10b208f01940c897a8e06eba053b6e", async() => {
                 BeginContext(670, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -186,7 +186,7 @@ using AppPrueba.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(701, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b733bb1eba44c75be7494ee3e475caa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4fa2383a5b24429bb9f7dd6c6422a1d1", async() => {
                 BeginContext(748, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

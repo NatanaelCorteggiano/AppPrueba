@@ -57,7 +57,7 @@ using AppPrueba.Models;
             WriteLiteral("<h1>Localidades</h1>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(40, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d8fefea592e4588a1cd02abb034f252", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ffb0848260154396b7a492c449b98d5f", async() => {
                 BeginContext(85, 10, true);
                 WriteLiteral("Crear Pais");
                 EndContext();
@@ -81,7 +81,7 @@ using AppPrueba.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(105, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42d45735246549aaba318a1d1d316081", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "68cac6d35b8044849584b03a2dec474d", async() => {
                 BeginContext(156, 15, true);
                 WriteLiteral("Crear Provincia");
                 EndContext();
@@ -105,7 +105,7 @@ using AppPrueba.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(181, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c436e6e784f407f863c65baed834369", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e4e6a2604cf4ce092bc22c9484c0afd", async() => {
                 BeginContext(230, 12, true);
                 WriteLiteral("Crear Ciudad");
                 EndContext();

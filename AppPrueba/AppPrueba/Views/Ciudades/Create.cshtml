@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h2>Create</h2>
+<h2>Crear</h2>
 
 <h4>Ciudad</h4>
 <hr />
@@ -13,16 +13,23 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
+                <label class="control-label">Pais</label>
+                <select id="paises" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Provincia</label>
+                <select asp-for="ProvinciaId" id="provincias" class="form-control" asp-items="ViewBag.ProvinciaId">
+                    <option> Seleccione la Provincia</option>
+                </select>
+                
+            </div>
+            <div class="form-group">
                 <label asp-for="Nombre" class="control-label"></label>
                 <input asp-for="Nombre" class="form-control" />
                 <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="control-label">Provincia</label>
-                <select asp-for="ProvinciaId" id="provincias" class ="form-control" asp-items="ViewBag.ProvinciaId"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Crear" class="btn btn-default" />
             </div>
         </form>
     </div>
@@ -41,18 +48,40 @@
 
     $(document).ready(function () {
         $.ajax({
-            url: '@Url.Action("ListaProvincias","Provincias")',
+            url: '@Url.Action("ListaPaises","Pais")',
             data: "{}",
-            success: function (data) {
+            success: function (pais) {
 
-                var s = '<option value = "-1"> Seleccione la Provincia</option>';
-                for (var i = 0; i < data.length; i++) {
-                    s += '<option value="' + data[i].id + '">' + data[i].nombre + '</option>';
+                var s = '<option value = "-1"> Seleccione el Pais</option>';
+                for (var i = 0; i < pais.length; i++) {
+                    s += '<option value="' + pais[i].id + '">' + pais[i].nombre + '</option>';
                 }
-                $("#provincias").html(s);
-                console.log(data);
+                $("#paises").html(s);
+                console.log(pais);
             }
         });
+
+        $("#paises").change(function () {
+                $("#provincias").empty();
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("ObtenerProvincias", "Provincias")',
+                    dataType: 'json',
+                    data: { pais: $("#paises").val() },
+
+                    success: function (provincias) {
+                        console.log(provincias);
+                        $.each(provincias, function (i, provincia) {
+                            $("#provincias").append(
+                                '<option value="' + provincia.value + '">' + provincia.text + '</option>');
+                        });
+                    },
+
+                    error: function (ex) {
+                        alert('Error al obtener las provincias');
+                    }
+                });
+            })
     });
 
 </script>

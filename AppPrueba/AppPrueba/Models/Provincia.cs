@@ -11,5 +11,6 @@ namespace AppPrueba.Models
         public string Nombre { get; set; }
         public int PaisId { get; set; }
         public List<Ciudad> Ciudades { get; set; }
+        public Pais Pais { get; set; }
     }
 }

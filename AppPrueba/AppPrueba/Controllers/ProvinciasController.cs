@@ -31,6 +31,13 @@ namespace AppPrueba.Controllers
             return Ok(await _context.Provincias.ToListAsync());
         }
 
+
+        public JsonResult ObtenerProvincias(int pais)
+        {
+            var provincias = _context.Provincias.ToList().Where(x => x.PaisId == pais);
+            return Json(new SelectList(provincias, "Id", "Nombre"));
+        }
+
         // GET: Provincias/Details/5
         public async Task<IActionResult> Details(int? id)
         {
